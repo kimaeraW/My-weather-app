@@ -144,3 +144,12 @@ form {
   opacity: 75%;
   color: #5585b5;
 }
+.mygithub {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  opacity: 75%;
+  color: #5585b5;
+  text-decoration: none;
+}
