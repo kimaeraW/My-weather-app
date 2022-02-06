@@ -1,0 +1,146 @@
+body {
+  display: block;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  padding-top: 5px;
+  color: #5585b5;
+  opacity: 75%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.currenttemp {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 80px;
+}
+.celsius {
+  padding: 5px;
+  font-size: 20px;
+  position: relative;
+  top: -42px;
+  left: -25px;
+}
+.currentcity {
+  font-size: 40px;
+}
+.currentday {
+  padding-bottom: 5px;
+  font-weight: 370;
+}
+#day {
+  font-weight: bold;
+}
+#current-city {
+  text-transform: capitalize;
+}
+
+.currentday,
+.weekdays,
+.temp,
+.cities {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  opacity: 75%;
+  color: #5585b5;
+}
+#current-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  color: #5585b5;
+  background: none;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #5585b5;
+}
+#current-button:hover {
+  background-color: #5585b5;
+  color: #ace0f9;
+  opacity: 75%;
+}
+
+.weekdays {
+  padding-top: 20px;
+}
+.temp {
+  padding-bottom: 15px;
+  font-weight: 370;
+}
+.input-group {
+  display: block;
+}
+.card {
+  display: block;
+  margin: 0 auto;
+  top: 20px;
+  max-width: 600px;
+}
+
+form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-left: 25%;
+  margin-right: 0;
+  width: 100%;
+}
+.btn-secondary {
+  display: inline-block;
+  width: 100px;
+}
+.weather-icons {
+  text-shadow: black;
+  width: 50px;
+}
+.card-body {
+  padding: 0;
+  display: block;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  max-width: 600px;
+}
+
+.precipitation,
+.humidity,
+.wind {
+  color: #5585b5;
+  opacity: 75%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.h1-cloud {
+  width: 150px;
+}
+.fa-wind,
+.fa-cloud-rain,
+.fa-tint {
+  color: #5585b5;
+  font-size: 50px;
+  opacity: 75%;
+}
+#celsius-link {
+  text-decoration: none;
+  color: #5585b5;
+  opacity: 75%;
+}
+
+.weekdays {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  opacity: 75%;
+  color: #5585b5;
+}
