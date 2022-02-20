@@ -22,38 +22,23 @@ function getDate(now) {
     "October",
     "November",
     "December"
-  ];
-  let day = week[now.getDay()];
-  let day1 = week[now.getDay()+1];
-  let day2 = week[now.getDay()+2];
-  let day3 = week[now.getDay()-4];
-  let day4 = week[now.getDay()-3];
-  let day5 = week[now.getDay()-2];
-  
-  
+  ]; 
   let date = now.getDate();
+  let day = week[now.getDay()];
   let mth = month[now.getMonth()];
   let year = now.getFullYear();
   let time = now.toLocaleString("en-US", {
-    hour: "numeric",
+    hour:"numeric",
     minute: "numeric",
-    hour12: true
-  });
+    hour12:true
+  })
+  ;
 
 
   let currentDay = document.querySelector("#day");
   let currentDate = document.querySelector("#date");
   let currentTime = document.querySelector("#time");
-  let dayOne = document.querySelector("#day1");
-  let dayTwo = document.querySelector("#day2");
-  let dayThree = document.querySelector("#day3");
-  let dayFour = document.querySelector("#day4");
-  let dayFive = document.querySelector("#day5");
-  dayOne.innerHTML = day1;
-  dayTwo.innerHTML = day2;
-  dayThree.innerHTML = day3;
-  dayFour.innerHTML = day4;
-  dayFive.innerHTML = day5;
+  
 
   currentDay.innerHTML = day;
   currentDate.innerHTML = `${date} ${mth} ${year}`;
