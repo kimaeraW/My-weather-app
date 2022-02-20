@@ -1,3 +1,4 @@
+
 function getDate(now) {
   let week = [
     "Sunday",
@@ -84,6 +85,9 @@ function showWeather(response) {
   let windValue = document.querySelector("#wind-value");
   windValue.innerHTML = `${wind} km/h`;
   document.querySelector("#current-city").innerHTML = response.data.name;
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let search = document.querySelector("#search-button");
