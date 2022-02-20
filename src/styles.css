@@ -146,8 +146,8 @@ form {
   display: block;
   margin: 0 auto;
   font-family: "Ubuntu", sans-serif;
-  font-size: 15px;
-  opacity: 75%;
+  font-size: 20px;
+
   color: #ffff;
 }
 .mygithub {
@@ -158,4 +158,13 @@ form {
   opacity: 75%;
   color: #ffff;
   text-decoration: none;
+}
+
+.forecast-temperature-min,
+.forecast-temperature-max {
+  font-size: 15px;
+}
+
+.forecast-temperature-min {
+  opacity: 75%;
 }
