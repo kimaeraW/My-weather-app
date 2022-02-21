@@ -65,18 +65,23 @@
             <span id="date"></span>
             <br />
             <span id="time"></span>
-          </div> 
-          <div class="row">
-            <div class="col-2 weekdays" id="forecast-day-weather">
-              Sun
-              <img
-                class="weather-icons"
-                src="http://openweathermap.org/img/wn/02n@2x.png"
-                alt="cloud"
-              />
-              <span class="forecast-temperature-max">18°</span> 
-              <span class="forecast-temperature-min">12°</span>
+          </div>
+          <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                Sun
+                <img
+                  src="http://openweathermap.org/img/wn/02n@2x.png"
+                  alt="cloud"
+                />
+                <div class="forecast-temperature">
+                  <span class="forecast-temperature-max">18°</span>
+                  <span class="forecast-temperature-min">12°</span>
+                </div>
+              </div>
             </div>
+          </div>
+
           <div class="form">
             <form id="search-form">
               <div class="row">

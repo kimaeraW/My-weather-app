@@ -45,7 +45,6 @@ h1 {
 }
 
 .currentday,
-.weekdays,
 .temp,
 .cities {
   text-align: center;
@@ -72,9 +71,6 @@ h1 {
   opacity: 75%;
 }
 
-.weekdays {
-  padding-top: 20px;
-}
 .temp {
   padding-bottom: 15px;
   font-weight: 370;
@@ -141,13 +137,12 @@ form {
   opacity: 75%;
 }
 
-.weekdays {
+.weather-forecast {
   text-align: center;
-  display: block;
-  margin: 0 auto;
+  margin-top: 20px;
   font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-
+  font-size: 15px;
+  opacity: 75%;
   color: #ffff;
 }
 .mygithub {
@@ -160,8 +155,7 @@ form {
   text-decoration: none;
 }
 
-.forecast-temperature-min,
-.forecast-temperature-max {
+.forecast-temperature {
   font-size: 15px;
 }
 
