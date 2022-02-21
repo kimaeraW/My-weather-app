@@ -62,10 +62,10 @@ function displayForecast(){
   let forecastElement = document.querySelector("#forecast");
 
 let forecastHTML =`<div class="row">`;
-let days =["Mon","Tue","Wed","Thu","Fri"];
+let days =["Mon","Tue","Wed","Thu"];
 days.forEach(function(day){
 forecastHTML = forecastHTML + `
-              <div class="col-2">
+              <div class="col-3">
                 ${day}
                 <img
                   src="http://openweathermap.org/img/wn/02n@2x.png"

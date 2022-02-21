@@ -139,7 +139,9 @@ form {
 
 .weather-forecast {
   text-align: center;
+  display: block;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   opacity: 75%;
