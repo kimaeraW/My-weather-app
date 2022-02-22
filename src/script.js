@@ -27,10 +27,9 @@ function getDate(now) {
   let day = week[now.getDay()];
   let mth = month[now.getMonth()];
   let year = now.getFullYear();
-  let time = now.toLocaleString("en-US", {
+  let time = now.toLocaleString("it-IT", {
     hour:"numeric",
     minute: "numeric",
-    hour12:true
   })
   ;
 
@@ -117,7 +116,7 @@ axios.get(apiUrl).then(displayForecast);
 function showWeather(response) {
   let temp = Math.round(response.data.main.temp);
   let inputTemp = document.querySelector("#current-temp");
-  inputTemp.innerHTML = `${temp}°`;
+  inputTemp.innerHTML = `${temp}`;
   let humidity = response.data.main.humidity;
   let humidityValue = document.querySelector("#humidity-value");
   humidityValue.innerHTML = `${humidity}%`;
@@ -166,15 +165,6 @@ let myKey = "be8656293d91357ab62994903e952e45";
 let apiFiveDayLink =`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${myKey}`;
 
 
-function displayFahrenheitTemperature(event){
-  event.preventDefault();
-let fahrenheitTemperature = (celsiusTemperature * 9)/5+32;
-let temperatureElement = document.querySelector("#current-temp");
-temperatureElement.innerHTML= Math.round(fahrenheitTemperature); 
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 function displayCelsiusTemperature (event){
   event.preventDefault();
@@ -184,5 +174,3 @@ function displayCelsiusTemperature (event){
 }
 
 
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click",displayCelsiusTemperature);

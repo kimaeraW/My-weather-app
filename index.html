@@ -46,12 +46,10 @@
               <span id="wind-value">3 km/h</span>
             </div>
           </div>
-          <div class="tempchange">
-            <a id="celsius-link" href="#">°C</a> |
-            <a id="fahrenheit-link" href="#">°F</a>
-          </div>
           <h1>
-            <div class="currenttemp"><span id="current-temp">3</span></div>
+            <div class="currenttemp">
+              <span id="current-temp">3</span><span class="celsius">°C</span>
+            </div>
             <div class="currentcity" id="current-city">Milan</div>
             <img class="h1-cloud" src="" alt="cloud" id="icon" />
           </h1>
@@ -66,21 +64,7 @@
             <br />
             <span id="time"></span>
           </div>
-          <div class="weather-forecast" id="forecast">
-            <div class="row">
-              <div class="col-2">
-                Sun
-                <img
-                  src="http://openweathermap.org/img/wn/02n@2x.png"
-                  alt="cloud"
-                />
-                <div class="forecast-temperature">
-                  <span class="forecast-temperature-max">18°</span>
-                  <span class="forecast-temperature-min">12°</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
 
           <div class="form">
             <form id="search-form">

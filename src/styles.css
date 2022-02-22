@@ -12,7 +12,11 @@ h1 {
   display: block;
   text-align: center;
 }
-
+.celsius {
+  font-size: 25px;
+  position: relative;
+  top: -35px;
+}
 .currenttemp {
   display: block;
   margin: 0 auto;
