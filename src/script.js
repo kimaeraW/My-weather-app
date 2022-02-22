@@ -33,7 +33,6 @@ function getDate(now) {
   })
   ;
 
-
   let currentDay = document.querySelector("#day");
   let currentDate = document.querySelector("#date");
   let currentTime = document.querySelector("#time");
@@ -106,10 +105,9 @@ forecastElement.innerHTML=forecastHTML;
 
 
 function getForecast(coordinates){
-  console.log(coordinates);
+  
 let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
-console.log(apiUrl);
+let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayForecast);
 }
 
@@ -154,7 +152,6 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
   let defaultCity = document.querySelector("#current-city");
-  console.log(defaultCity);
 }
 searchCity("Milan");
 
