@@ -11,7 +11,7 @@ function getDate(now) {
   ];
   let month = [
     "January",
-    "Febuary",
+    "February",
     "March",
     "April",
     "May",
