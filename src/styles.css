@@ -113,7 +113,6 @@ form {
   max-width: 600px;
 }
 
-.precipitation,
 .humidity,
 .wind {
   color: #ffff;
